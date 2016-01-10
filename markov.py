@@ -44,7 +44,7 @@ def make_chain(names):
         # followed by another.
         for first, following in stepped(name, 2):
             chain.setdefault(first, []).append(following)
-            
+
     return chain, first_letters
 
 def make_chain_from_files(fnames):
